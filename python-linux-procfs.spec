@@ -3,7 +3,7 @@ Version:	0.5.1
 Release:	1
 License:	GPLv2
 Summary:	Linux /proc abstraction classes
-Group:		System Environment/Libraries
+Group:		Development/Python
 Source0:	https://cdn.kernel.org/pub/software/libs/python/%{name}/%{name}-%{version}.tar.xz
 URL:		https://rt.wiki.kernel.org/index.php/Tuna
 BuildArch:	noarch
