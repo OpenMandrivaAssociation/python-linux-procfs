@@ -7,12 +7,12 @@ Group:		System Environment/Libraries
 Source0:	https://cdn.kernel.org/pub/software/libs/python/%{name}/%{name}-%{version}.tar.xz
 URL:		https://rt.wiki.kernel.org/index.php/Tuna
 BuildArch:	noarch
-BuildRequires: pkgconfig(python3)
-BuildRequires: python3-setuptools
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python3egg(setuptools)
+Requires:	python3egg(six)
 
 %description
 Abstractions to extract information from the Linux kernel /proc files.
-
 
 %prep
 %setup -q
