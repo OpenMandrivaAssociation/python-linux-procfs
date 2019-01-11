@@ -1,10 +1,10 @@
 Name:		python-linux-procfs
-Version:	0.5.1
-Release:	3
+Version:	0.6
+Release:	1
 License:	GPLv2
 Summary:	Linux /proc abstraction classes
 Group:		Development/Python
-Source0:	https://cdn.kernel.org/pub/software/libs/python/%{name}/%{name}-%{version}.tar.xz
+Source0:	http://pypi.python.org/packages/source/p/python-linux-procfs/%{name}-%{version}.tar.gz
 URL:		https://rt.wiki.kernel.org/index.php/Tuna
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python3)
@@ -18,12 +18,12 @@ Abstractions to extract information from the Linux kernel /proc files.
 %setup -q
 
 %build
-%{__python} setup.py build
+python setup.py build
 
 %install
-%{__python} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
 %{_bindir}/pflags
-%{python3_sitelib}/procfs/
-%{python3_sitelib}/python_linux_procfs*.egg-info
+%{py3_puresitedir}/procfs/
+%{py3_puresitedir}/python_linux_procfs*.egg-info
