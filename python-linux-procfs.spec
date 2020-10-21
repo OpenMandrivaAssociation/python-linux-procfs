@@ -1,6 +1,6 @@
 Name:		python-linux-procfs
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	GPLv2
 Summary:	Linux /proc abstraction classes
 Group:		Development/Python
@@ -15,13 +15,13 @@ Requires:	python3egg(six)
 Abstractions to extract information from the Linux kernel /proc files.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%{__python} setup.py build
+python setup.py build
 
 %install
-%{__python} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
 %{_bindir}/pflags
