@@ -1,6 +1,6 @@
 Name:		python-linux-procfs
 Version:	0.7.0
-Release:	1
+Release:	2
 License:	GPLv2
 Summary:	Linux /proc abstraction classes
 Group:		Development/Python
